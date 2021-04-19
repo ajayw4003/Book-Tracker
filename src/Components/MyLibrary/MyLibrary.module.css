@@ -1,0 +1,100 @@
+.container1{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: 100%;
+    
+}
+.dark{
+    height: 100%;
+    width: 100%;
+    background: rgb(17, 14, 14);
+    color: white;
+    margin: auto;
+}
+.light{
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: black;
+    margin: auto;
+}
+#lightDark{
+    background: rgb(68, 64, 64);
+}
+.fa{
+    width: 100px;
+    height: 30px;
+}
+
+.content, .menu button{
+    border: none;
+    outline: none;
+}
+.menu{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/-1;
+}
+.topBar{
+    grid-column: 4/-1;
+    grid-row: 1/2;
+}
+.books{
+    grid-column: 4/-1;
+    grid-row: 2/-1;
+}
+.menu, .topBar, .books{
+    background-color: #caf7e3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+}
+.menu:hover, .topBar:hover, .books:hover{
+    box-shadow: 5px 5px 5px 5px #7e7979;
+}
+
+
+/* Menu Css */
+.menu div{
+    margin-top: 10px;
+}
+.menu button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* Books Css */
+.allBooks{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 700px){
+    .allBooks{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .allBooks{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+.block{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    background: #7eca9c;
+    border-radius: 10px;
+
+}
+.block:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
+    transform: scale(1.05);
+
+}
