@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import MyLibrary from "./Components/MyLibrary/MyLibrary";
@@ -8,6 +8,20 @@ import AddNewBook from "./Components/AddNewBook/AddNewBook";
 
 function App() {
   const [library, setLibrary] = useState([]);
+
+  useEffect(() => {
+    let dataToLoad = localStorage.getItem("booksAdded");
+    let oldData = JSON.parse(dataToLoad);
+    if(oldData){
+     setLibrary(oldData) ;
+    }
+    
+  },[])
+
+  useEffect(() => {
+    const currenrtData = JSON.stringify(library);
+    localStorage.setItem("booksAdded", currenrtData)
+  }, [library])
 
   return (
     <div>
