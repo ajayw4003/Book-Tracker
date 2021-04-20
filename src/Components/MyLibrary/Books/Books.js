@@ -17,13 +17,13 @@ const Books = ({theme, library}) => {
     return (
         <div className = {  cx(styles.content, styles.books)} id = {theme ? styles.lightDark: " "}>
             
-            <InputGroup className="mb-2 my-2 col-md-8 offset-2">
+            <InputGroup className="mb-2 my-2 col-md-8">
                 <input className = "form-control"
                     placeholder="Search book from your library"
                     onChange = {handleChange}   
                 />
             </InputGroup>
-            
+            {library.length === 0 ? <h3>No Book present please add books</h3>: <h4>Current books</h4>}
             <div className = {styles.allBooks}>
                 {getBook === "" ? (
                     <>

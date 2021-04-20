@@ -14,7 +14,7 @@ const MyLibrary = ({library}) => {
     return (
         <div  className = { cx(theme ? styles.dark : styles.light)}>
             <h1>MyLibrary</h1>
-            <div className = {library ? styles.container1 : styles.container2}>
+            <div className = {library.length === 0 ? styles.container2 : styles.container1}>
                 <Menu 
                     handleTheme = {handleTheme} 
                     theme ={theme} 
@@ -25,7 +25,7 @@ const MyLibrary = ({library}) => {
                     id = {theme ? styles.lightDark: " "}>
                 </div>
                 
-                <Books theme = {theme} library = {library}/>
+                <Books theme = {theme} library = {library} />
             </div>
         </div>
     );
