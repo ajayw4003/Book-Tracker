@@ -42,7 +42,7 @@ const AddNewBook = ({library, setLibrary}) => {
 
     return (
         <div className = {styles1.main}>
-            <h1 className = "col-md-6 offset-4 my-3">Search Book Herex</h1>
+            <h1 className = "col-md-6 offset-4 my-3">Search Book Here</h1>
             <InputGroup className="mb-2 my-2 col-md-6 offset-3">
                 <input className = "form-control"
                     placeholder="Enter the book name"
