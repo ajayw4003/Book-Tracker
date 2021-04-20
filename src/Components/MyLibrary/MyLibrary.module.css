@@ -24,10 +24,13 @@
 #lightDark{
     background: rgb(68, 64, 64);
 }
-.fa{
+.themeButton{
+    width: 150px;
+}
+/* .fa{
     width: 100px;
     height: 30px;
-}
+} */
 
 .content, .menu button{
     border: none;

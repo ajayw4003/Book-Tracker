@@ -1,0 +1,22 @@
+#lightDark{
+    background: rgb(68, 64, 64);
+}
+
+
+.content, .menu button{
+    border: none;
+    outline: none;
+}
+.menu{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/-1;
+}
+.menu{
+    background-color: #caf7e3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+}
+.menu:hover{
+    box-shadow: 5px 5px 5px 5px #7e7979;
+}

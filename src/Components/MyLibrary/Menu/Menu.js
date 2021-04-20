@@ -13,10 +13,10 @@ const Menu = ({handleTheme, theme}) => {
                 <div>Add New Book</div>
             </Link>
             <hr />
-            <div onClick = {handleTheme}>
-                {theme ? <i className= {`fa fa-toggle-on`}></i> : <i className="fa fa-toggle-off"></i>}
+            <div onClick = {handleTheme}>Theme
+                {theme ? <i className= "fa fa-toggle-on"></i> : <i className="fa fa-toggle-off"></i>}
             </div>
-            <i className={`fa fa-toggle-off`}></i>
+            
            
         </div>
     );
