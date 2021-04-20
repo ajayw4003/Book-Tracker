@@ -16,7 +16,7 @@ const Menu = ({handleTheme, theme}) => {
             </Link>
             <hr />
             <div onClick = {handleTheme} className = { cx(styles.themeButton)}>Theme
-                {theme ? <ToggleOffIcon id= { cx(styles.toggle)}/> : <ToggleOnIcon  id = { cx(styles.toggle)}/>}
+                {theme ? <ToggleOffIcon id = { cx(styles.toggle)}/> : <ToggleOnIcon  id = { cx(styles.toggle)}/>}
             </div>
             
            

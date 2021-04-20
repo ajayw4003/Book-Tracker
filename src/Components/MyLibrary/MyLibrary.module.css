@@ -1,4 +1,4 @@
-.container1{
+.container1, .container2{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(12, 1fr);
@@ -6,6 +6,9 @@
     height: 100%;
     width: 100%;
     
+}
+.container2{
+    height: 100vh;
 }
 .dark{
     height: 100%;
@@ -45,13 +48,10 @@
     font-size: 40px;
     transition: 0.6s;
 }
-.topBar{
-    grid-column: 4/-1;
-    grid-row: 1/2;
-}
+
 .books{
     grid-column: 4/-1;
-    grid-row: 2/-1;
+    grid-row: 1/-1;
 }
 .menu, .topBar, .books{
     background-color: #caf7e3;

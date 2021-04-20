@@ -12,9 +12,9 @@ const MyLibrary = ({library}) => {
        setTheme(!theme);
     }
     return (
-        <div  className = {theme ? styles.dark : styles.light}>
+        <div  className = { cx(theme ? styles.dark : styles.light)}>
             <h1>MyLibrary</h1>
-            <div className = {styles.container1}>
+            <div className = {library ? styles.container1 : styles.container2}>
                 <Menu 
                     handleTheme = {handleTheme} 
                     theme ={theme} 
