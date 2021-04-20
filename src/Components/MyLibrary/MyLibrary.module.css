@@ -3,7 +3,7 @@
     grid-gap: 10px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     
 }
@@ -24,13 +24,7 @@
 #lightDark{
     background: rgb(68, 64, 64);
 }
-.themeButton{
-    width: 150px;
-}
-/* .fa{
-    width: 100px;
-    height: 30px;
-} */
+
 
 .content, .menu button{
     border: none;
@@ -40,6 +34,16 @@
     text-align: center;
     grid-column: 1/4;
     grid-row: 1/-1;
+}
+.themeButton{
+    font-size: larger;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#toggle{
+    font-size: 40px;
+    transition: 0.6s;
 }
 .topBar{
     grid-column: 4/-1;
@@ -75,6 +79,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+@media screen and (max-width: 900px){
+    .allBooks{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
 @media screen and (max-width: 700px){
     .allBooks{
         grid-template-columns: repeat(2, 1fr);
@@ -88,6 +98,7 @@
     
 }
 .block{
+    text-align: center;
     border: none;
     outline: none;
     padding: 10px;

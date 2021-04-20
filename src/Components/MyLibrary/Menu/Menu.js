@@ -3,6 +3,8 @@ import styles from "../MyLibrary.module.css";
 import cx from "classnames";
 import {Button} from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ToggleOffIcon from '@material-ui/icons/ToggleOff';
+import ToggleOnIcon from '@material-ui/icons/ToggleOn';
 
 const Menu = ({handleTheme, theme}) => {
 
@@ -13,8 +15,8 @@ const Menu = ({handleTheme, theme}) => {
                 <div>Add New Book</div>
             </Link>
             <hr />
-            <div onClick = {handleTheme}>Theme
-                {theme ? <i className= "fa fa-toggle-on"></i> : <i className="fa fa-toggle-off"></i>}
+            <div onClick = {handleTheme} className = { cx(styles.themeButton)}>Theme
+                {theme ? <ToggleOffIcon id= { cx(styles.toggle)}/> : <ToggleOnIcon  id = { cx(styles.toggle)}/>}
             </div>
             
            
