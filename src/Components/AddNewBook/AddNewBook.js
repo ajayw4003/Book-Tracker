@@ -1,4 +1,5 @@
 import { Button, InputGroup  } from 'react-bootstrap';
+import {Link } from "react-router-dom";
 import React, { useState } from 'react';
 import styles1 from "./AddNewBook.module.css";
 
@@ -42,7 +43,11 @@ const AddNewBook = ({library, setLibrary}) => {
 
     return (
         <div className = {styles1.main}>
-            <h1 className = "col-md-6 my-3">Search Book Here</h1>
+            <div style ={{display: "flex", justifyContent:"space-around"}}>
+                <h1 className = "col-md-6 my-3">Search Book Here</h1>
+                <Link to = "/"><Button className = "col-md-9 my-2 " variant= "primary lg">Back To My Library</Button></Link>
+            </div>
+            
             <InputGroup className="mb-2 my-2">
                 <input className = "form-control"
                     placeholder="Enter the book name"
